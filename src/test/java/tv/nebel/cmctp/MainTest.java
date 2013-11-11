@@ -19,7 +19,7 @@ public class MainTest {
 
     public static final int THREAD_POOL_SIZE = 10;
 
-    public static String GEARMAN_HOST = "ec2-54-194-30-221.eu-west-1.compute.amazonaws.com";
+    public static String GEARMAN_HOST = "ec2-54-194-32-81.eu-west-1.compute.amazonaws.com";
     public static int    GEARMAN_PORT = 4730;
 
     private TestService testService;
@@ -43,9 +43,9 @@ public class MainTest {
     @DataProvider (parallel = IS_PARALLEL_DATA_PROVIDER)
     private Object[][] dataProviderTestCases() {
         return new Object[][] {
-            { "http://en.wikipedia.org/wiki/Algorithm", "10800d8562db0bc2f6a267c18672b680" },
-            { "http://en.wikipedia.org/wiki/Computer_science", "83275d168634f10a8e96a9e9f4d826cc" },
-            { "http://www.ukr.net", "b314b1e38ae9fd1e1c85aab376be316d" },
+            { "http://en.wikipedia.org/wiki/Algorithm", "84287114dac2347ce7de5c50e2b3cc34" },
+            { "http://en.wikipedia.org/wiki/Computer_science", "57d2dc58da8e6b7d5da200a0cf227633" },
+            { "http://bsd.org/", "c6e67fa77dd835dd23d04b1af799aa72" },
         };
     }
 }
